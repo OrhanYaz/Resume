@@ -5,7 +5,7 @@ Then it uses Whisper from openAI as speech-to-text framework to convert audio fi
 At last step, we uses facebook/bart-large-cnn to summarize the text using huggingface transformers.
 
 
-There is one problem now: the summary model takes maximum 1024 token so we can only fully summarize small videos otherwise the model will truncate the input taxt to match maximum token.
+There is one problem now: the summary model takes maximum 1024 token so we can only fully summarize small videos otherwise the model will truncate the input text to match maximum token. So to deal with it, we can cut the text into chunks using differents techniques like sematic chunking
 
 
 
